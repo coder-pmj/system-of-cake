@@ -1,0 +1,41 @@
+
+                  写入功能组件  
+                  
+                            前提  ：<script src="tools/jquery-3.3.1.min.js"></script>以下所有js文件均依赖jquery
+                            
+          <script src="tools/function.js"></script> 必须并且在Tools目录上的其他组件之前引入此文件，
+                              因为其他组件都会用到此文件下内的函数
+                  
+          <script src="tools/click.js"></script>,  服务于登录之前的监听
+          <script src="tools/click2.js"></script>,  服务于登录之前的监听
+          <script src="tools/login.js"></script>,  登录处理组件
+          <script src="tools/tools.js"></script>,  服务于登录之后   ，功能组件
+          <script src="tools/tools2.js"></script>,  服务于登录之后   ，功能组件
+          <script src="tools/changeNumber.js"></script>,  此组件会动态修改数据库购物车中商品的数量
+          
+          
+                  
+                  
+                  
+                 游客主页 index.php  新增     登陆后的主页index-logining.php并设置session判断
+                                                       新增购物车页面  cart.php
+                 
+                 
+                
+
+
+       
+    1.将连接数据库的代码封装在 handler/conn.php   只需在这个文件下修改成您的mysql服务密码即可成功连接数据库 
+
+    2.将登录验证方式有 提交form表单形式改为 ajax提交的数据的方式，
+             优点显而易见，如果要更改 弹出框样式，  详情 /tools/tools.js/第74行  
+             
+    3.主页订阅 通讯——》功能，新增正则匹配，即必须输入正确的邮箱格式     详情 /tools/tools.js/第102行         
+             
+             
+             
+           
+   
+   
+             
+            
